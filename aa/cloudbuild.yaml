@@ -2,3 +2,5 @@ steps:
   - name: gcr.io/google.com/cloudsdktool/cloud-sdk
     args: ['make', '${_TARGET}']
     dir: aa
+options:
+  logging: CLOUD_LOGGING_ONLY
