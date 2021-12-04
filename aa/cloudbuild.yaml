@@ -1,5 +1,4 @@
 steps:
   - name: gcr.io/google.com/cloudsdktool/cloud-sdk
-    args:
-      - ['make', '${_TARGET}']
+    args: ['make', '${_TARGET}']
     dir: aa
