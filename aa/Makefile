@@ -1,4 +1,5 @@
 
 .PHONY: test
 test:
-	gsutil --help
+	gsutil cp Makefile gs://junsan45_bq_external/
+	gcloud auth list
