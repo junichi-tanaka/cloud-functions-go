@@ -2,5 +2,5 @@ steps:
   - name: gcr.io/google.com/cloudsdktool/cloud-sdk
     args: ['make', '${_TARGET}']
     dir: aa
-options:
-  logging: CLOUD_LOGGING_ONLY
+    env:
+      - 'CLOUDSDK_AUTH_IMPERSONATE_SERVICE_ACCOUNT=gcf-deployer@junsan45.iam.gserviceaccount.com'
